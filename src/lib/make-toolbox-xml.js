@@ -324,7 +324,7 @@ const events = function (isStage) {
         <block type="event_whenbackdropswitchesto">
         </block>
         ${blockSeparator}
-        <block type="event_whengreaterthan">
+        <block type="event_whengreaterthan" dynamic="true">
             <value name="VALUE">
                 <shadow type="math_number">
                     <field name="NUM">10</field>
@@ -332,14 +332,14 @@ const events = function (isStage) {
             </value>
         </block>
         ${blockSeparator}
-        <block type="event_whenbroadcastreceived">
+        <block type="event_whenbroadcastreceived" dynamic="true">
         </block>
-        <block type="event_broadcast">
+        <block type="event_broadcast" dynamic="true">
             <value name="BROADCAST_INPUT">
                 <shadow type="event_broadcast_menu"></shadow>
             </value>
         </block>
-        <block type="event_broadcastandwait">
+        <block type="event_broadcastandwait" dynamic="true">
             <value name="BROADCAST_INPUT">
               <shadow type="event_broadcast_menu"></shadow>
             </value>
